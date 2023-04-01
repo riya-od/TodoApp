@@ -267,7 +267,7 @@ export function App() {
     //setTodoArray((prev) => prev.filter((i) => i.name !== name));
     setTodoArray((prev) => {
       const result = [...prev];
-      delete result[index];
+      result.splice(index, 1);
       return result;
     });
   };
